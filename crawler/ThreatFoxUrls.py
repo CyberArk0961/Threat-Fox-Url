@@ -6,11 +6,6 @@ from io import StringIO
 THREATFOX_URL = "https://threatfox.abuse.ch/export/csv/urls/recent/"
 
 def fetch_threatfox_urls():
-    """
-    Fetches recent URL IOCs from ThreatFox CSV export.
-    Returns a list of dictionaries with normalized fields.
-    """
-
     try:
         response = requests.get(THREATFOX_URL, timeout=20)
         response.raise_for_status()
@@ -29,16 +24,21 @@ def fetch_threatfox_urls():
 
     iocs = []
     for row in reader:
+        if not row.get("ioc_value"):
+            continue
+
         ioc_entry = {
             "ioc_value": row.get("ioc_value"),
+            "ioc_type": row.get("ioc_type"),
             "threat_type": row.get("threat_type"),
-            "malware": row.get("malware"),
+            "malware_printable": row.get("malware_printable"),
             "confidence_level": row.get("confidence_level"),
             "first_seen_utc": row.get("first_seen_utc"),
             "last_seen_utc": row.get("last_seen_utc"),
-            "reference": row.get("reference"),
+            "tags": row.get("tags"),
             "import_timestamp": datetime.utcnow().isoformat() + "Z"
         }
+
         iocs.append(ioc_entry)
 
     # Deduplicate by IOC value
@@ -47,9 +47,6 @@ def fetch_threatfox_urls():
 
 
 def save_to_csv(iocs, filename="threatfox_urls.csv"):
-    """
-    Saves IOC list to a CSV file.
-    """
     if not iocs:
         print("No IOCs to save.")
         return
@@ -67,5 +64,4 @@ def save_to_csv(iocs, filename="threatfox_urls.csv"):
 if __name__ == "__main__":
     iocs = fetch_threatfox_urls()
     print(f"Collected {len(iocs)} URL IOCs from ThreatFox")
-
     save_to_csv(iocs, "threatfox_urls.csv")
