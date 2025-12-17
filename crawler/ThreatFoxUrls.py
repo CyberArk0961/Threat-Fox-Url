@@ -19,7 +19,7 @@ def fetch_threatfox_urls():
 
     csv_data = response.text
 
-    # ThreatFox CSV contains comment lines starting with '#'
+    # Remove comment lines starting with '#'
     csv_clean = "\n".join(
         line for line in csv_data.splitlines() if not line.startswith("#")
     )
@@ -46,9 +46,26 @@ def fetch_threatfox_urls():
     return list(unique_iocs.values())
 
 
+def save_to_csv(iocs, filename="threatfox_urls.csv"):
+    """
+    Saves IOC list to a CSV file.
+    """
+    if not iocs:
+        print("No IOCs to save.")
+        return
+
+    fieldnames = list(iocs[0].keys())
+
+    with open(filename, "w", newline="", encoding="utf-8") as f:
+        writer = csv.DictWriter(f, fieldnames=fieldnames)
+        writer.writeheader()
+        writer.writerows(iocs)
+
+    print(f"Saved {len(iocs)} IOCs to {filename}")
+
+
 if __name__ == "__main__":
     iocs = fetch_threatfox_urls()
-    print(f"Collected {len(iocs)} URL IOCs from ThreatFox\n")
+    print(f"Collected {len(iocs)} URL IOCs from ThreatFox")
 
-    for i in iocs[:10]:  # preview first 10
-        print(i)
+    save_to_csv(iocs, "threatfox_urls.csv")
