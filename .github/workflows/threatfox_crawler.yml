@@ -1,0 +1,35 @@
+name: ThreatFox IOC Crawler
+
+on:
+  schedule:
+    - cron: "0 0 * * *"   # Runs every 24 hours at 00:00 UTC
+  workflow_dispatch:       # Allows manual run
+
+jobs:
+  run-crawler:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: |
+          pip install requests
+
+      - name: Run ThreatFox IOC crawler
+        run: |
+          python crawler/threatfox_crawler.py
+
+      # Optional: Save output as artifact
+      - name: Upload IOC results
+        if: success()
+        uses: actions/upload-artifact@v4
+        with:
+          name: threatfox-iocs
+          path: iocs.json
