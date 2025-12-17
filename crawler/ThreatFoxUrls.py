@@ -31,11 +31,16 @@ def fetch_threatfox_urls():
             "ioc_value": row.get("ioc_value"),
             "ioc_type": row.get("ioc_type"),
             "threat_type": row.get("threat_type"),
+            "malware_family_id": row.get("fk_malware"),
+            "malware_alias": row.get("malware_alias"),
             "malware_printable": row.get("malware_printable"),
             "confidence_level": row.get("confidence_level"),
             "first_seen_utc": row.get("first_seen_utc"),
             "last_seen_utc": row.get("last_seen_utc"),
+            "reference": row.get("reference"),
             "tags": row.get("tags"),
+            "anonymous": row.get("anonymous"),
+            "reporter": row.get("reporter"),
             "import_timestamp": datetime.utcnow().isoformat() + "Z"
         }
 
