@@ -24,7 +24,7 @@ jobs:
 
       - name: Run ThreatFox IOC crawler
         run: |
-          python crawler/threatfox_crawler.py
+          python crawler/ThreatFoxUrls.py
 
       # Optional: Save output as artifact
       - name: Upload IOC results
