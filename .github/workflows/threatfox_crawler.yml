@@ -23,7 +23,7 @@ jobs:
          pip install requests
      - name: Run ThreatFox URL Crawler
        run: |
-         python threatfox_url_crawler.py
+         python crawler/ThreatFoxUrls.py
      - name: Commit and push changes
        run: |
          git config --global user.name "github-actions[bot]"
