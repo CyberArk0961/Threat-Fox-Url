@@ -1,72 +1,98 @@
-import csv
+#!/usr/bin/env python3
+"""
+ThreatFox URL IOC Crawler
+Source: https://threatfox.abuse.ch/export/csv/urls/recent/
+
+- Fetches recent URL-based IOCs
+- Cleans CSV comments
+- Outputs structured CSV
+- Safe for daily automation
+"""
+
 import requests
+import csv
+import io
 from datetime import datetime
-from io import StringIO
+import os
 
+# =====================
+# CONFIG
+# =====================
 THREATFOX_URL = "https://threatfox.abuse.ch/export/csv/urls/recent/"
+OUTPUT_DIR = "output"
+OUTPUT_FILE = f"threatfox_urls_{datetime.utcnow().strftime('%Y%m%d')}.csv"
 
-def fetch_threatfox_urls():
-    try:
-        response = requests.get(THREATFOX_URL, timeout=20)
-        response.raise_for_status()
-    except Exception as e:
-        raise RuntimeError(f"Failed to fetch ThreatFox data: {e}")
+HEADERS = {
+    "User-Agent": "ThreatIntel-Crawler/1.0"
+}
 
-    csv_data = response.text
+# =====================
+# FUNCTIONS
+# =====================
+def fetch_threatfox_csv():
+    response = requests.get(THREATFOX_URL, headers=HEADERS, timeout=60)
+    response.raise_for_status()
+    return response.text
 
-    # Remove comment lines starting with '#'
-    csv_clean = "\n".join(
-        line for line in csv_data.splitlines() if not line.startswith("#")
-    )
 
-    f = StringIO(csv_clean)
-    reader = csv.DictReader(f)
+def parse_csv(raw_csv):
+    """
+    ThreatFox CSV contains comment lines starting with '#'
+    """
+    clean_lines = [
+        line for line in raw_csv.splitlines()
+        if not line.startswith("#") and line.strip()
+    ]
 
-    iocs = []
+    reader = csv.DictReader(clean_lines)
+    records = []
+
     for row in reader:
-        if not row.get("ioc_value"):
-            continue
-
-        ioc_entry = {
-            "ioc_value": row.get("ioc_value"),
+        records.append({
+            "ioc": row.get("ioc"),
             "ioc_type": row.get("ioc_type"),
             "threat_type": row.get("threat_type"),
-            "malware_family_id": row.get("fk_malware"),
-            "malware_alias": row.get("malware_alias"),
-            "malware_printable": row.get("malware_printable"),
+            "malware": row.get("malware"),
             "confidence_level": row.get("confidence_level"),
-            "first_seen_utc": row.get("first_seen_utc"),
-            "last_seen_utc": row.get("last_seen_utc"),
             "reference": row.get("reference"),
-            "tags": row.get("tags"),
-            "anonymous": row.get("anonymous"),
-            "reporter": row.get("reporter"),
-            "import_timestamp": datetime.utcnow().isoformat() + "Z"
-        }
+            "first_seen": row.get("first_seen"),
+            "last_seen": row.get("last_seen"),
+            "source": "ThreatFox",
+            "collection_date": datetime.utcnow().isoformat()
+        })
 
-        iocs.append(ioc_entry)
-
-    # Deduplicate by IOC value
-    unique_iocs = {ioc["ioc_value"]: ioc for ioc in iocs}
-    return list(unique_iocs.values())
+    return records
 
 
-def save_to_csv(iocs, filename="threatfox_urls.csv"):
-    if not iocs:
-        print("No IOCs to save.")
+def save_csv(data):
+    os.makedirs(OUTPUT_DIR, exist_ok=True)
+    output_path = os.path.join(OUTPUT_DIR, OUTPUT_FILE)
+
+    if not data:
+        print("[!] No IOCs collected")
         return
 
-    fieldnames = list(iocs[0].keys())
-
-    with open(filename, "w", newline="", encoding="utf-8") as f:
-        writer = csv.DictWriter(f, fieldnames=fieldnames)
+    with open(output_path, "w", newline="", encoding="utf-8") as f:
+        writer = csv.DictWriter(f, fieldnames=data[0].keys())
         writer.writeheader()
-        writer.writerows(iocs)
+        writer.writerows(data)
 
-    print(f"Saved {len(iocs)} IOCs to {filename}")
+    print(f"[+] Saved {len(data)} URL IOCs → {output_path}")
+
+
+# =====================
+# MAIN
+# =====================
+def main():
+    print("[*] Fetching ThreatFox URL IOCs...")
+    raw_csv = fetch_threatfox_csv()
+
+    print("[*] Parsing data...")
+    iocs = parse_csv(raw_csv)
+
+    print("[*] Saving output...")
+    save_csv(iocs)
 
 
 if __name__ == "__main__":
-    iocs = fetch_threatfox_urls()
-    print(f"Collected {len(iocs)} URL IOCs from ThreatFox")
-    save_to_csv(iocs, "threatfox_urls.csv")
+    main()
