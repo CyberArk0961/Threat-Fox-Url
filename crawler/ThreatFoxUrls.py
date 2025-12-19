@@ -1,17 +1,19 @@
 #!/usr/bin/env python3
 """
-ThreatFox URL IOC Crawler
-Source: https://threatfox.abuse.ch/export/csv/urls/recent/
+ThreatFox URL IOC Crawler (POSITIONAL – FINAL)
 
-- Fetches recent URL-based IOCs
-- Handles ThreatFox CSV quirks correctly
-- Outputs a fixed CSV file for automation
+Source:
+https://threatfox.abuse.ch/export/csv/urls/recent/
+
+IMPORTANT:
+- Feed has NO header row
+- Rows are comma-separated
+- Must be parsed positionally
 """
 
 import requests
 import csv
 import os
-from datetime import datetime
 
 # =====================
 # CONFIG
@@ -24,50 +26,57 @@ HEADERS = {
     "User-Agent": "ThreatIntel-Crawler/1.0"
 }
 
+FIELDNAMES = [
+    "first_seen_utc",     # 0
+    "ioc_id",             # 1
+    "ioc_value",          # 2  (URL)
+    "ioc_type",           # 3
+    "threat_type",        # 4
+    "fk_malware",         # 5
+    "malware_alias",      # 6
+    "malware_printable",  # 7
+    "last_seen_utc",      # 8
+    "confidence_level",   # 9
+    "reference",          # 10
+    "tags",               # 11
+    "anonymous",          # 12
+    "reporter"            # 13
+]
+
 # =====================
-# FETCH DATA
+# FETCH
 # =====================
 def fetch_threatfox_csv():
-    response = requests.get(THREATFOX_URL, headers=HEADERS, timeout=60)
-    response.raise_for_status()
-    return response.text
-
+    r = requests.get(THREATFOX_URL, headers=HEADERS, timeout=60)
+    r.raise_for_status()
+    return r.text.lstrip("\ufeff")
 
 # =====================
-# PARSE CSV (FIXED)
+# PARSE (POSITIONAL)
 # =====================
 def parse_csv(raw_csv):
     records = []
+    seen_ids = set()
 
     reader = csv.reader(
-        line for line in raw_csv.splitlines()
-        if line and not line.startswith("#")
+        (line for line in raw_csv.splitlines() if line and not line.startswith("#")),
+        delimiter=",",
+        quotechar='"'
     )
 
-    header = next(reader, None)
-    if not header:
-        return records
-
     for row in reader:
-        # ThreatFox CSV rows should have at least 8 columns
-        if len(row) < 8:
+        if len(row) < 14:
             continue
 
-        records.append({
-            "ioc": row[0].strip(),
-            "ioc_type": row[1].strip(),
-            "threat_type": row[2].strip(),
-            "malware": row[3].strip(),
-            "confidence_level": row[4].strip(),
-            "reference": row[5].strip(),
-            "first_seen": row[6].strip(),
-            "last_seen": row[7].strip(),
-            "source": "ThreatFox",
-            "collection_date": datetime.utcnow().isoformat()
-        })
+        ioc_id = row[1].strip()
+        if not ioc_id or ioc_id in seen_ids:
+            continue
+        seen_ids.add(ioc_id)
+
+        record = dict(zip(FIELDNAMES, [c.strip() for c in row[:14]]))
+        records.append(record)
 
     return records
-
 
 # =====================
 # SAVE CSV
@@ -77,30 +86,19 @@ def save_csv(data):
     output_path = os.path.join(OUTPUT_DIR, OUTPUT_FILE)
 
     if not data:
-        print("[!] No IOCs collected")
+        print("[!] No URL IOCs collected")
         return
 
     with open(output_path, "w", newline="", encoding="utf-8") as f:
         writer = csv.DictWriter(
             f,
-            fieldnames=[
-                "ioc",
-                "ioc_type",
-                "threat_type",
-                "malware",
-                "confidence_level",
-                "reference",
-                "first_seen",
-                "last_seen",
-                "source",
-                "collection_date"
-            ]
+            fieldnames=FIELDNAMES,
+            quoting=csv.QUOTE_ALL
         )
         writer.writeheader()
         writer.writerows(data)
 
-    print(f"[+] Saved {len(data)} IOCs → {output_path}")
-
+    print(f"[+] Saved {len(data)} URL IOCs → {output_path}")
 
 # =====================
 # MAIN
@@ -109,13 +107,11 @@ def main():
     print("[*] Fetching ThreatFox URL IOCs...")
     raw_csv = fetch_threatfox_csv()
 
-    print("[*] Parsing IOCs...")
+    print("[*] Parsing URL IOCs (positional)...")
     iocs = parse_csv(raw_csv)
 
     print("[*] Writing output...")
     save_csv(iocs)
 
-
 if __name__ == "__main__":
     main()
-
