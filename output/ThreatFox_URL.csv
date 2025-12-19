@@ -1,113 +1,54 @@
 ioc,ioc_type,threat_type,malware,confidence_level,reference,first_seen,last_seen,source,collection_date
-2025-12-17 21:20:10,"""1682026""","""http://91.212.150.246/07efd5d9112845b8.php""","""url""","""botnet_cc""","""win.stealc""","""None""","""Stealc""",ThreatFox,2025-12-18T06:16:53.519580
-2025-12-17 18:10:10,"""1681862""","""http://196.251.107.4/h8jfdmdWS/index.php""","""url""","""botnet_cc""","""win.amadey""","""None""","""Amadey""",ThreatFox,2025-12-18T06:16:53.519596
-2025-12-17 17:03:10,"""1681583""","""http://78.40.209.164:5506/dk.vbs""","""url""","""botnet_cc""","""win.hijackloader""","""DOILoader",GHOSTPULSE,ThreatFox,2025-12-18T06:16:53.519602
-2025-12-17 17:03:10,"""1681584""","""http://78.40.209.164:5506/JFEXKAKW.msi""","""url""","""botnet_cc""","""win.hijackloader""","""DOILoader",GHOSTPULSE,ThreatFox,2025-12-18T06:16:53.519610
-2025-12-17 13:31:48,"""1681466""","""https://chi.botick.top/""","""url""","""botnet_cc""","""win.vidar""","""None""","""Vidar""",ThreatFox,2025-12-18T06:16:53.519614
-2025-12-17 13:31:48,"""1681467""","""https://chi.frederickcookies.com.br/""","""url""","""botnet_cc""","""win.vidar""","""None""","""Vidar""",ThreatFox,2025-12-18T06:16:53.519618
-2025-12-17 09:58:37,"""1681290""","""https://www.vpnathan-partners.com.my/""","""url""","""payload_delivery""","""unknown""","""None""","""Unknown malware""",ThreatFox,2025-12-18T06:16:53.519626
-2025-12-17 09:58:36,"""1681291""","""https://mail.vanguartagency.com/""","""url""","""payload_delivery""","""unknown""","""None""","""Unknown malware""",ThreatFox,2025-12-18T06:16:53.519632
-2025-12-17 09:58:36,"""1681341""","""https://academie.habg.ci/""","""url""","""payload_delivery""","""unknown""","""None""","""Unknown malware""",ThreatFox,2025-12-18T06:16:53.519636
-2025-12-17 09:07:05,"""1681333""","""https://91.124.149.199/""","""url""","""botnet_cc""","""win.vidar""","""None""","""Vidar""",ThreatFox,2025-12-18T06:16:53.519640
-2025-12-17 09:07:04,"""1681326""","""https://xsw.asrkala.top/""","""url""","""botnet_cc""","""win.vidar""","""None""","""Vidar""",ThreatFox,2025-12-18T06:16:53.519643
-2025-12-17 09:07:04,"""1681327""","""https://gor.botick.top/""","""url""","""botnet_cc""","""win.vidar""","""None""","""Vidar""",ThreatFox,2025-12-18T06:16:53.519647
-2025-12-17 09:07:04,"""1681328""","""https://gor.frederickcookies.com.br/""","""url""","""botnet_cc""","""win.vidar""","""None""","""Vidar""",ThreatFox,2025-12-18T06:16:53.519652
-2025-12-17 09:07:04,"""1681329""","""https://86.54.42.241/""","""url""","""botnet_cc""","""win.vidar""","""None""","""Vidar""",ThreatFox,2025-12-18T06:16:53.519655
-2025-12-17 09:07:04,"""1681330""","""https://86.54.42.243/""","""url""","""botnet_cc""","""win.vidar""","""None""","""Vidar""",ThreatFox,2025-12-18T06:16:53.519658
-2025-12-17 09:07:04,"""1681331""","""https://95.217.245.21/""","""url""","""botnet_cc""","""win.vidar""","""None""","""Vidar""",ThreatFox,2025-12-18T06:16:53.519661
-2025-12-17 09:07:04,"""1681332""","""https://157.180.35.209/""","""url""","""botnet_cc""","""win.vidar""","""None""","""Vidar""",ThreatFox,2025-12-18T06:16:53.519664
-2025-12-17 09:07:03,"""1681325""","""https://xsw.chadamaite.com/""","""url""","""botnet_cc""","""win.vidar""","""None""","""Vidar""",ThreatFox,2025-12-18T06:16:53.519667
-2025-12-17 07:46:26,"""1680801""","""http://114.132.217.187:8888/supershell/login/""","""url""","""botnet_cc""","""unknown""","""None""","""Unknown malware""",ThreatFox,2025-12-18T06:16:53.519671
-2025-12-17 07:46:25,"""1681135""","""http://198.46.216.206:8888/supershell/login/""","""url""","""botnet_cc""","""unknown""","""None""","""Unknown malware""",ThreatFox,2025-12-18T06:16:53.519675
-2025-12-17 07:46:22,"""1681069""","""https://tenjin-central.com/""","""url""","""payload_delivery""","""unknown""","""None""","""Unknown malware""",ThreatFox,2025-12-18T06:16:53.519679
-2025-12-17 07:46:21,"""1681137""","""https://usanovafoundation.org/""","""url""","""payload_delivery""","""unknown""","""None""","""Unknown malware""",ThreatFox,2025-12-18T06:16:53.519682
-2025-12-17 07:46:18,"""1681189""","""https://lead-mc.jp/""","""url""","""payload_delivery""","""unknown""","""None""","""Unknown malware""",ThreatFox,2025-12-18T06:16:53.519686
-2025-12-17 07:15:10,"""1681279""","""http://fedoramaginoracura.site:8080/updater?for=5120D3FEDD36EAC912DB54C863CE59BB""","""url""","""botnet_cc""","""unknown""","""None""","""Unknown malware""",ThreatFox,2025-12-18T06:16:53.519690
-2025-12-16 18:05:15,"""1681017""","""http://196.251.107.23/7ffc7a279c17c091.php""","""url""","""botnet_cc""","""win.stealc""","""None""","""Stealc""",ThreatFox,2025-12-18T06:16:53.519693
-2025-12-16 15:33:32,"""1680786""","""https://tur.chadamaite.com/""","""url""","""botnet_cc""","""win.vidar""","""None""","""Vidar""",ThreatFox,2025-12-18T06:16:53.519696
-2025-12-16 15:33:32,"""1680787""","""https://tur.asrkala.top/""","""url""","""botnet_cc""","""win.vidar""","""None""","""Vidar""",ThreatFox,2025-12-18T06:16:53.519700
-2025-12-16 15:11:56,"""1680780""","""https://jjjgaasda.live/api/config""","""url""","""botnet_cc""","""unknown_stealer""","""None""","""Unknown Stealer""",ThreatFox,2025-12-18T06:16:53.519705
-2025-12-16 15:11:56,"""1680781""","""https://jjjgaasda.live/api/client""","""url""","""botnet_cc""","""unknown_stealer""","""None""","""Unknown Stealer""",ThreatFox,2025-12-18T06:16:53.519709
-2025-12-16 15:11:56,"""1680782""","""https://steamcommunity.com/profiles/76561199000000002/""","""url""","""botnet_cc""","""unknown_stealer""","""None""","""Unknown Stealer""",ThreatFox,2025-12-18T06:16:53.519715
-2025-12-16 15:08:03,"""1680776""","""https://www.dcamargobetoneiras.com.br/""","""url""","""payload_delivery""","""unknown""","""None""","""Unknown malware""",ThreatFox,2025-12-18T06:16:53.519719
-2025-12-16 14:50:38,"""1680727""","""https://lumis.lt/""","""url""","""payload_delivery""","""unknown""","""None""","""Unknown malware""",ThreatFox,2025-12-18T06:16:53.519725
-2025-12-16 14:50:37,"""1680728""","""https://fastsolution.asia/""","""url""","""payload_delivery""","""unknown""","""None""","""Unknown malware""",ThreatFox,2025-12-18T06:16:53.519729
-2025-12-16 14:50:30,"""1680740""","""https://www.seydap.gr/""","""url""","""payload_delivery""","""unknown""","""None""","""Unknown malware""",ThreatFox,2025-12-18T06:16:53.519732
-2025-12-16 14:25:18,"""1680746""","""http://45.93.20.34/20e1a9f6de594e28.php""","""url""","""botnet_cc""","""win.stealc""","""None""","""Stealc""",ThreatFox,2025-12-18T06:16:53.519736
-2025-12-16 11:15:25,"""1680691""","""http://43.156.137.45:443/jquery-3.3.1.min.js""","""url""","""botnet_cc""","""win.cobalt_strike""","""Agentemis",BEACON,ThreatFox,2025-12-18T06:16:53.519740
-2025-12-16 10:06:07,"""1680670""","""https://val.chadamaite.com/""","""url""","""botnet_cc""","""win.vidar""","""None""","""Vidar""",ThreatFox,2025-12-18T06:16:53.519744
-2025-12-16 10:06:07,"""1680671""","""https://val.asrkala.top/""","""url""","""botnet_cc""","""win.vidar""","""None""","""Vidar""",ThreatFox,2025-12-18T06:16:53.519747
-2025-12-16 08:11:24,"""1680642""","""https://kit.chadamaite.com/""","""url""","""botnet_cc""","""win.vidar""","""None""","""Vidar""",ThreatFox,2025-12-18T06:16:53.519749
-2025-12-16 08:11:24,"""1680643""","""https://kit.asrkala.top/""","""url""","""botnet_cc""","""win.vidar""","""None""","""Vidar""",ThreatFox,2025-12-18T06:16:53.519752
-2025-12-16 08:11:24,"""1680644""","""https://top.chadamaite.com/""","""url""","""botnet_cc""","""win.vidar""","""None""","""Vidar""",ThreatFox,2025-12-18T06:16:53.519757
-2025-12-16 08:11:24,"""1680645""","""https://top.asrkala.top/""","""url""","""botnet_cc""","""win.vidar""","""None""","""Vidar""",ThreatFox,2025-12-18T06:16:53.519760
-2025-12-16 08:11:24,"""1680646""","""https://46.224.26.34/""","""url""","""botnet_cc""","""win.vidar""","""None""","""Vidar""",ThreatFox,2025-12-18T06:16:53.519763
-2025-12-16 08:11:24,"""1680647""","""https://157.180.113.244/""","""url""","""botnet_cc""","""win.vidar""","""None""","""Vidar""",ThreatFox,2025-12-18T06:16:53.519778
-2025-12-16 08:11:24,"""1680648""","""https://185.208.158.230/""","""url""","""botnet_cc""","""win.vidar""","""None""","""Vidar""",ThreatFox,2025-12-18T06:16:53.519782
-2025-12-16 07:20:24,"""1680615""","""http://42.193.243.230:8899/ySIH""","""url""","""botnet_cc""","""win.cobalt_strike""","""Agentemis",BEACON,ThreatFox,2025-12-18T06:16:53.519787
-2025-12-16 06:58:55,"""1680531""","""http://www.sgx60.shop/rn10/""","""url""","""botnet_cc""","""win.formbook""","""win.xloader""","""Formbook""",ThreatFox,2025-12-18T06:16:53.519792
-2025-12-16 06:58:55,"""1680532""","""http://www.ssessxtratrades.ltd/rn10/""","""url""","""botnet_cc""","""win.formbook""","""win.xloader""","""Formbook""",ThreatFox,2025-12-18T06:16:53.519795
-2025-12-16 06:58:55,"""1680533""","""http://www.stra.parts/rn10/""","""url""","""botnet_cc""","""win.formbook""","""win.xloader""","""Formbook""",ThreatFox,2025-12-18T06:16:53.519799
-2025-12-16 06:58:55,"""1680534""","""http://www.t2wjl8x.bond/rn10/""","""url""","""botnet_cc""","""win.formbook""","""win.xloader""","""Formbook""",ThreatFox,2025-12-18T06:16:53.519802
-2025-12-16 06:58:55,"""1680535""","""http://www.umespot.com/rn10/""","""url""","""botnet_cc""","""win.formbook""","""win.xloader""","""Formbook""",ThreatFox,2025-12-18T06:16:53.519805
-2025-12-16 06:58:55,"""1680536""","""http://www.yla6phe.bond/rn10/""","""url""","""botnet_cc""","""win.formbook""","""win.xloader""","""Formbook""",ThreatFox,2025-12-18T06:16:53.519810
-2025-12-16 06:58:55,"""1680537""","""http://www.ytegs.com/rn10/""","""url""","""botnet_cc""","""win.formbook""","""win.xloader""","""Formbook""",ThreatFox,2025-12-18T06:16:53.519813
-2025-12-16 06:58:55,"""1680538""","""http://www.zlbk7uj.bond/rn10/""","""url""","""botnet_cc""","""win.formbook""","""win.xloader""","""Formbook""",ThreatFox,2025-12-18T06:16:53.519817
-2025-12-16 06:58:55,"""1680539""","""http://www.zm7.top/rn10/""","""url""","""botnet_cc""","""win.formbook""","""win.xloader""","""Formbook""",ThreatFox,2025-12-18T06:16:53.519820
-2025-12-16 06:58:55,"""1680540""","""http://www.zmoonshots.com/rn10/""","""url""","""botnet_cc""","""win.formbook""","""win.xloader""","""Formbook""",ThreatFox,2025-12-18T06:16:53.519823
-2025-12-16 06:58:54,"""1680521""","""http://www.oreenheintznotary.com/rn10/""","""url""","""botnet_cc""","""win.formbook""","""win.xloader""","""Formbook""",ThreatFox,2025-12-18T06:16:53.519826
-2025-12-16 06:58:54,"""1680522""","""http://www.otelsnearbrentfordstadium.com/rn10/""","""url""","""botnet_cc""","""win.formbook""","""win.xloader""","""Formbook""",ThreatFox,2025-12-18T06:16:53.519829
-2025-12-16 06:58:54,"""1680523""","""http://www.otget.net/rn10/""","""url""","""botnet_cc""","""win.formbook""","""win.xloader""","""Formbook""",ThreatFox,2025-12-18T06:16:53.519834
-2025-12-16 06:58:54,"""1680524""","""http://www.ovisque.com/rn10/""","""url""","""botnet_cc""","""win.formbook""","""win.xloader""","""Formbook""",ThreatFox,2025-12-18T06:16:53.519837
-2025-12-16 06:58:54,"""1680525""","""http://www.pavk23.bond/rn10/""","""url""","""botnet_cc""","""win.formbook""","""win.xloader""","""Formbook""",ThreatFox,2025-12-18T06:16:53.519841
-2025-12-16 06:58:54,"""1680526""","""http://www.portmore-iq.com/rn10/""","""url""","""botnet_cc""","""win.formbook""","""win.xloader""","""Formbook""",ThreatFox,2025-12-18T06:16:53.519844
-2025-12-16 06:58:54,"""1680527""","""http://www.r5boj.bond/rn10/""","""url""","""botnet_cc""","""win.formbook""","""win.xloader""","""Formbook""",ThreatFox,2025-12-18T06:16:53.519847
-2025-12-16 06:58:54,"""1680528""","""http://www.ritify.info/rn10/""","""url""","""botnet_cc""","""win.formbook""","""win.xloader""","""Formbook""",ThreatFox,2025-12-18T06:16:53.519851
-2025-12-16 06:58:54,"""1680529""","""http://www.rjvc.cn/rn10/""","""url""","""botnet_cc""","""win.formbook""","""win.xloader""","""Formbook""",ThreatFox,2025-12-18T06:16:53.519855
-2025-12-16 06:58:54,"""1680530""","""http://www.rternhouse.com/rn10/""","""url""","""botnet_cc""","""win.formbook""","""win.xloader""","""Formbook""",ThreatFox,2025-12-18T06:16:53.519858
-2025-12-16 06:58:53,"""1680512""","""http://www.lirionis.com/rn10/""","""url""","""botnet_cc""","""win.formbook""","""win.xloader""","""Formbook""",ThreatFox,2025-12-18T06:16:53.519868
-2025-12-16 06:58:53,"""1680513""","""http://www.mnwp51y.bond/rn10/""","""url""","""botnet_cc""","""win.formbook""","""win.xloader""","""Formbook""",ThreatFox,2025-12-18T06:16:53.519871
-2025-12-16 06:58:53,"""1680514""","""http://www.n2s37.shop/rn10/""","""url""","""botnet_cc""","""win.formbook""","""win.xloader""","""Formbook""",ThreatFox,2025-12-18T06:16:53.519876
-2025-12-16 06:58:53,"""1680515""","""http://www.oa6yi73.bond/rn10/""","""url""","""botnet_cc""","""win.formbook""","""win.xloader""","""Formbook""",ThreatFox,2025-12-18T06:16:53.519879
-2025-12-16 06:58:53,"""1680516""","""http://www.oadsidearmor.com/rn10/""","""url""","""botnet_cc""","""win.formbook""","""win.xloader""","""Formbook""",ThreatFox,2025-12-18T06:16:53.519884
-2025-12-16 06:58:53,"""1680517""","""http://www.obsonadv.com/rn10/""","""url""","""botnet_cc""","""win.formbook""","""win.xloader""","""Formbook""",ThreatFox,2025-12-18T06:16:53.519887
-2025-12-16 06:58:53,"""1680518""","""http://www.oodgutbug.com/rn10/""","""url""","""botnet_cc""","""win.formbook""","""win.xloader""","""Formbook""",ThreatFox,2025-12-18T06:16:53.519890
-2025-12-16 06:58:53,"""1680519""","""http://www.oohook.net/rn10/""","""url""","""botnet_cc""","""win.formbook""","""win.xloader""","""Formbook""",ThreatFox,2025-12-18T06:16:53.519893
-2025-12-16 06:58:53,"""1680520""","""http://www.ordfilmpyr.lat/rn10/""","""url""","""botnet_cc""","""win.formbook""","""win.xloader""","""Formbook""",ThreatFox,2025-12-18T06:16:53.519896
-2025-12-16 06:58:52,"""1680502""","""http://www.hillipsakers.com/rn10/""","""url""","""botnet_cc""","""win.formbook""","""win.xloader""","""Formbook""",ThreatFox,2025-12-18T06:16:53.519900
-2025-12-16 06:58:52,"""1680503""","""http://www.horncast.se/rn10/""","""url""","""botnet_cc""","""win.formbook""","""win.xloader""","""Formbook""",ThreatFox,2025-12-18T06:16:53.519903
-2025-12-16 06:58:52,"""1680504""","""http://www.hpsvifx.bond/rn10/""","""url""","""botnet_cc""","""win.formbook""","""win.xloader""","""Formbook""",ThreatFox,2025-12-18T06:16:53.519908
-2025-12-16 06:58:52,"""1680505""","""http://www.i7u6fiq.bond/rn10/""","""url""","""botnet_cc""","""win.formbook""","""win.xloader""","""Formbook""",ThreatFox,2025-12-18T06:16:53.519911
-2025-12-16 06:58:52,"""1680506""","""http://www.iile.cn/rn10/""","""url""","""botnet_cc""","""win.formbook""","""win.xloader""","""Formbook""",ThreatFox,2025-12-18T06:16:53.519914
-2025-12-16 06:58:52,"""1680507""","""http://www.indowblindsbd.com/rn10/""","""url""","""botnet_cc""","""win.formbook""","""win.xloader""","""Formbook""",ThreatFox,2025-12-18T06:16:53.519917
-2025-12-16 06:58:52,"""1680508""","""http://www.infastvnauto.com/rn10/""","""url""","""botnet_cc""","""win.formbook""","""win.xloader""","""Formbook""",ThreatFox,2025-12-18T06:16:53.519921
-2025-12-16 06:58:52,"""1680509""","""http://www.ioneerindustriesllc.net/rn10/""","""url""","""botnet_cc""","""win.formbook""","""win.xloader""","""Formbook""",ThreatFox,2025-12-18T06:16:53.519924
-2025-12-16 06:58:52,"""1680510""","""http://www.itoolstown.com/rn10/""","""url""","""botnet_cc""","""win.formbook""","""win.xloader""","""Formbook""",ThreatFox,2025-12-18T06:16:53.519929
-2025-12-16 06:58:52,"""1680511""","""http://www.kwj9ys.bond/rn10/""","""url""","""botnet_cc""","""win.formbook""","""win.xloader""","""Formbook""",ThreatFox,2025-12-18T06:16:53.519932
-2025-12-16 06:58:51,"""1680493""","""http://www.eojgm2.bond/rn10/""","""url""","""botnet_cc""","""win.formbook""","""win.xloader""","""Formbook""",ThreatFox,2025-12-18T06:16:53.519935
-2025-12-16 06:58:51,"""1680494""","""http://www.erkshireriskservices.ai/rn10/""","""url""","""botnet_cc""","""win.formbook""","""win.xloader""","""Formbook""",ThreatFox,2025-12-18T06:16:53.519940
-2025-12-16 06:58:51,"""1680495""","""http://www.eucaixaapp.com.br/rn10/""","""url""","""botnet_cc""","""win.formbook""","""win.xloader""","""Formbook""",ThreatFox,2025-12-18T06:16:53.519944
-2025-12-16 06:58:51,"""1680496""","""http://www.ffortlessrules.com/rn10/""","""url""","""botnet_cc""","""win.formbook""","""win.xloader""","""Formbook""",ThreatFox,2025-12-18T06:16:53.519947
-2025-12-16 06:58:51,"""1680497""","""http://www.fnciu.bond/rn10/""","""url""","""botnet_cc""","""win.formbook""","""win.xloader""","""Formbook""",ThreatFox,2025-12-18T06:16:53.519950
-2025-12-16 06:58:51,"""1680498""","""http://www.glychic.store/rn10/""","""url""","""botnet_cc""","""win.formbook""","""win.xloader""","""Formbook""",ThreatFox,2025-12-18T06:16:53.519955
-2025-12-16 06:58:51,"""1680499""","""http://www.hargingstations.be/rn10/""","""url""","""botnet_cc""","""win.formbook""","""win.xloader""","""Formbook""",ThreatFox,2025-12-18T06:16:53.519958
-2025-12-16 06:58:51,"""1680500""","""http://www.heiliao.wiki/rn10/""","""url""","""botnet_cc""","""win.formbook""","""win.xloader""","""Formbook""",ThreatFox,2025-12-18T06:16:53.519961
-2025-12-16 06:58:51,"""1680501""","""http://www.heroplu.xyz/rn10/""","""url""","""botnet_cc""","""win.formbook""","""win.xloader""","""Formbook""",ThreatFox,2025-12-18T06:16:53.519965
-2025-12-16 06:58:50,"""1680483""","""http://www.a2sbn1y.bond/rn10/""","""url""","""botnet_cc""","""win.formbook""","""win.xloader""","""Formbook""",ThreatFox,2025-12-18T06:16:53.519968
-2025-12-16 06:58:50,"""1680484""","""http://www.ainedcapital.com/rn10/""","""url""","""botnet_cc""","""win.formbook""","""win.xloader""","""Formbook""",ThreatFox,2025-12-18T06:16:53.519973
-2025-12-16 06:58:50,"""1680485""","""http://www.apwzfssh.com/rn10/""","""url""","""botnet_cc""","""win.formbook""","""win.xloader""","""Formbook""",ThreatFox,2025-12-18T06:16:53.519976
-2025-12-16 06:58:50,"""1680486""","""http://www.atecards.pro/rn10/""","""url""","""botnet_cc""","""win.formbook""","""win.xloader""","""Formbook""",ThreatFox,2025-12-18T06:16:53.519979
-2025-12-16 06:58:50,"""1680487""","""http://www.atio.ee/rn10/""","""url""","""botnet_cc""","""win.formbook""","""win.xloader""","""Formbook""",ThreatFox,2025-12-18T06:16:53.519982
-2025-12-16 06:58:50,"""1680488""","""http://www.dityahd.com/rn10/""","""url""","""botnet_cc""","""win.formbook""","""win.xloader""","""Formbook""",ThreatFox,2025-12-18T06:16:53.519985
-2025-12-16 06:58:50,"""1680489""","""http://www.eadpoint.xyz/rn10/""","""url""","""botnet_cc""","""win.formbook""","""win.xloader""","""Formbook""",ThreatFox,2025-12-18T06:16:53.519988
-2025-12-16 06:58:50,"""1680490""","""http://www.ebyarhgo9.info/rn10/""","""url""","""botnet_cc""","""win.formbook""","""win.xloader""","""Formbook""",ThreatFox,2025-12-18T06:16:53.519991
-2025-12-16 06:58:50,"""1680491""","""http://www.egalsandstone.com/rn10/""","""url""","""botnet_cc""","""win.formbook""","""win.xloader""","""Formbook""",ThreatFox,2025-12-18T06:16:53.519994
-2025-12-16 06:58:50,"""1680492""","""http://www.enjajackpot168.com/rn10/""","""url""","""botnet_cc""","""win.formbook""","""win.xloader""","""Formbook""",ThreatFox,2025-12-18T06:16:53.519999
-2025-12-16 06:58:49,"""1680476""","""http://www.052atelier.com/rn10/""","""url""","""botnet_cc""","""win.formbook""","""win.xloader""","""Formbook""",ThreatFox,2025-12-18T06:16:53.520004
-2025-12-16 06:58:49,"""1680477""","""http://www.1wrzv5r.bond/rn10/""","""url""","""botnet_cc""","""win.formbook""","""win.xloader""","""Formbook""",ThreatFox,2025-12-18T06:16:53.520007
-2025-12-16 06:58:49,"""1680478""","""http://www.39tka.bond/rn10/""","""url""","""botnet_cc""","""win.formbook""","""win.xloader""","""Formbook""",ThreatFox,2025-12-18T06:16:53.520011
-2025-12-16 06:58:49,"""1680479""","""http://www.4er.online/rn10/""","""url""","""botnet_cc""","""win.formbook""","""win.xloader""","""Formbook""",ThreatFox,2025-12-18T06:16:53.520014
-2025-12-16 06:58:49,"""1680480""","""http://www.5vip5.com/rn10/""","""url""","""botnet_cc""","""win.formbook""","""win.xloader""","""Formbook""",ThreatFox,2025-12-18T06:16:53.520017
-2025-12-16 06:58:49,"""1680481""","""http://www.5x15yrz.bond/rn10/""","""url""","""botnet_cc""","""win.formbook""","""win.xloader""","""Formbook""",ThreatFox,2025-12-18T06:16:53.520022
-2025-12-16 06:58:49,"""1680482""","""http://www.7xj4xi.bond/rn10/""","""url""","""botnet_cc""","""win.formbook""","""win.xloader""","""Formbook""",ThreatFox,2025-12-18T06:16:53.520025
-2025-12-16 06:57:16,"""1680461""","""https://api.telegram.org/bot8393528187:AAHE-fyrLEN4E-tne4sqWpoJxCobZTMq5ME/""","""url""","""botnet_cc""","""win.agent_tesla""","""AgenTesla",AgentTesla,ThreatFox,2025-12-18T06:16:53.520029
+2025-12-19 00:10:10,"""1682960""","""http://31.42.185.135:8080/updater?for=5120D3FEDD36EAC912DB54C863CE59BB""","""url""","""botnet_cc""","""unknown""","""None""","""Unknown malware""",ThreatFox,2025-12-19T04:09:23.982189
+2025-12-18 18:18:54,"""1682500""","""http://77.90.53.18:1337/webhook""","""url""","""botnet_cc""","""unknown_stealer""","""None""","""Unknown Stealer""",ThreatFox,2025-12-19T04:09:23.982211
+2025-12-18 18:18:53,"""1682510""","""https://193.233.198.221/""","""url""","""botnet_cc""","""win.vidar""","""None""","""Vidar""",ThreatFox,2025-12-19T04:09:23.982217
+2025-12-18 18:18:53,"""1682503""","""http://94.156.114.203:5000/login.php""","""url""","""botnet_cc""","""unknown""","""None""","""Unknown malware""",ThreatFox,2025-12-19T04:09:23.982224
+2025-12-18 15:06:29,"""1682407""","""https://138.226.237.36/""","""url""","""botnet_cc""","""win.vidar""","""None""","""Vidar""",ThreatFox,2025-12-19T04:09:23.982230
+2025-12-18 15:06:28,"""1682426""","""https://138.226.236.68/""","""url""","""botnet_cc""","""win.vidar""","""None""","""Vidar""",ThreatFox,2025-12-19T04:09:23.982235
+2025-12-18 15:06:28,"""1682412""","""https://dimelox.com/""","""url""","""payload_delivery""","""unknown""","""None""","""Unknown malware""",ThreatFox,2025-12-19T04:09:23.982240
+2025-12-18 15:06:27,"""1682460""","""https://stealer.su/login""","""url""","""botnet_cc""","""unknown""","""None""","""Unknown malware""",ThreatFox,2025-12-19T04:09:23.982248
+2025-12-18 15:06:27,"""1682432""","""https://bakvau-store.evascientific.com/""","""url""","""payload_delivery""","""unknown""","""None""","""Unknown malware""",ThreatFox,2025-12-19T04:09:23.982254
+2025-12-18 13:23:10,"""1682446""","""https://pri.diamond-cutting.kiev.ua/""","""url""","""botnet_cc""","""win.vidar""","""None""","""Vidar""",ThreatFox,2025-12-19T04:09:23.982259
+2025-12-18 13:23:10,"""1682445""","""https://pri.marcialongman.com.br/""","""url""","""botnet_cc""","""win.vidar""","""None""","""Vidar""",ThreatFox,2025-12-19T04:09:23.982264
+2025-12-18 10:25:05,"""1682363""","""https://www.utama78.com/""","""url""","""payload_delivery""","""unknown""","""None""","""Unknown malware""",ThreatFox,2025-12-19T04:09:23.982268
+2025-12-18 10:25:05,"""1682362""","""https://favashop.com.ar/""","""url""","""payload_delivery""","""unknown""","""None""","""Unknown malware""",ThreatFox,2025-12-19T04:09:23.982273
+2025-12-18 10:25:04,"""1682364""","""https://tnsa.jp/""","""url""","""payload_delivery""","""unknown""","""None""","""Unknown malware""",ThreatFox,2025-12-19T04:09:23.982277
+2025-12-18 10:25:04,"""1682365""","""https://worldvacationtour.com/""","""url""","""payload_delivery""","""unknown""","""None""","""Unknown malware""",ThreatFox,2025-12-19T04:09:23.982282
+2025-12-18 08:48:48,"""1682290""","""https://mail.physioxrsize.nl/""","""url""","""payload_delivery""","""unknown""","""None""","""Unknown malware""",ThreatFox,2025-12-19T04:09:23.982287
+2025-12-18 08:48:47,"""1682291""","""https://mail.avomawealth.com/""","""url""","""payload_delivery""","""unknown""","""None""","""Unknown malware""",ThreatFox,2025-12-19T04:09:23.982293
+2025-12-18 08:31:38,"""1682325""","""http://80.253.249.252:5000/api/beacon""","""url""","""botnet_cc""","""unknown""","""None""","""Unknown malware""",ThreatFox,2025-12-19T04:09:23.982298
+2025-12-18 08:20:08,"""1682319""","""https://95.217.25.136/""","""url""","""botnet_cc""","""win.vidar""","""None""","""Vidar""",ThreatFox,2025-12-19T04:09:23.982303
+2025-12-18 08:20:08,"""1682318""","""https://77.42.43.16/""","""url""","""botnet_cc""","""win.vidar""","""None""","""Vidar""",ThreatFox,2025-12-19T04:09:23.982307
+2025-12-18 08:20:08,"""1682317""","""https://ala.cimansazan.top/""","""url""","""botnet_cc""","""win.vidar""","""None""","""Vidar""",ThreatFox,2025-12-19T04:09:23.982311
+2025-12-18 08:20:07,"""1682316""","""https://ala.marcialongman.com.br/""","""url""","""botnet_cc""","""win.vidar""","""None""","""Vidar""",ThreatFox,2025-12-19T04:09:23.982315
+2025-12-18 08:20:07,"""1682315""","""https://telegram.me/gal17d""","""url""","""botnet_cc""","""win.vidar""","""None""","""Vidar""",ThreatFox,2025-12-19T04:09:23.982319
+2025-12-18 08:20:07,"""1682314""","""https://steamcommunity.com/profiles/76561198759765485""","""url""","""botnet_cc""","""win.vidar""","""None""","""Vidar""",ThreatFox,2025-12-19T04:09:23.982324
+2025-12-18 07:12:05,"""1682274""","""https://fortwaynejubileebrontide.com/Category%3AAmerican_schoolteachers""","""url""","""botnet_cc""","""unknown_stealer""","""None""","""Unknown Stealer""",ThreatFox,2025-12-19T04:09:23.982329
+2025-12-18 07:07:15,"""1681870""","""https://138.226.237.34/""","""url""","""botnet_cc""","""win.vidar""","""None""","""Vidar""",ThreatFox,2025-12-19T04:09:23.982335
+2025-12-18 07:07:14,"""1681874""","""http://196.251.107.4/h8jfdmdWS/Login.php""","""url""","""botnet_cc""","""win.amadey""","""None""","""Amadey""",ThreatFox,2025-12-19T04:09:23.982341
+2025-12-18 07:07:10,"""1681887""","""https://138.226.236.31/""","""url""","""botnet_cc""","""win.vidar""","""None""","""Vidar""",ThreatFox,2025-12-19T04:09:23.982345
+2025-12-17 23:25:18,"""1682127""","""http://31.42.185.135:8080/updater?for=0AA6B9F07A5B27B2069C137C69EC91EB""","""url""","""botnet_cc""","""unknown""","""None""","""Unknown malware""",ThreatFox,2025-12-19T04:09:23.982349
+2025-12-17 21:20:10,"""1682026""","""http://91.212.150.246/07efd5d9112845b8.php""","""url""","""botnet_cc""","""win.stealc""","""None""","""Stealc""",ThreatFox,2025-12-19T04:09:23.982353
+2025-12-17 18:10:10,"""1681862""","""http://196.251.107.4/h8jfdmdWS/index.php""","""url""","""botnet_cc""","""win.amadey""","""None""","""Amadey""",ThreatFox,2025-12-19T04:09:23.982358
+2025-12-17 17:03:10,"""1681584""","""http://78.40.209.164:5506/JFEXKAKW.msi""","""url""","""botnet_cc""","""win.hijackloader""","""DOILoader",GHOSTPULSE,ThreatFox,2025-12-19T04:09:23.982363
+2025-12-17 17:03:10,"""1681583""","""http://78.40.209.164:5506/dk.vbs""","""url""","""botnet_cc""","""win.hijackloader""","""DOILoader",GHOSTPULSE,ThreatFox,2025-12-19T04:09:23.982367
+2025-12-17 13:31:48,"""1681467""","""https://chi.frederickcookies.com.br/""","""url""","""botnet_cc""","""win.vidar""","""None""","""Vidar""",ThreatFox,2025-12-19T04:09:23.982371
+2025-12-17 13:31:48,"""1681466""","""https://chi.botick.top/""","""url""","""botnet_cc""","""win.vidar""","""None""","""Vidar""",ThreatFox,2025-12-19T04:09:23.982375
+2025-12-17 09:58:37,"""1681290""","""https://www.vpnathan-partners.com.my/""","""url""","""payload_delivery""","""unknown""","""None""","""Unknown malware""",ThreatFox,2025-12-19T04:09:23.982380
+2025-12-17 09:58:36,"""1681341""","""https://academie.habg.ci/""","""url""","""payload_delivery""","""unknown""","""None""","""Unknown malware""",ThreatFox,2025-12-19T04:09:23.982384
+2025-12-17 09:58:36,"""1681291""","""https://mail.vanguartagency.com/""","""url""","""payload_delivery""","""unknown""","""None""","""Unknown malware""",ThreatFox,2025-12-19T04:09:23.982389
+2025-12-17 09:07:05,"""1681333""","""https://91.124.149.199/""","""url""","""botnet_cc""","""win.vidar""","""None""","""Vidar""",ThreatFox,2025-12-19T04:09:23.982394
+2025-12-17 09:07:04,"""1681329""","""https://86.54.42.241/""","""url""","""botnet_cc""","""win.vidar""","""None""","""Vidar""",ThreatFox,2025-12-19T04:09:23.982397
+2025-12-17 09:07:04,"""1681326""","""https://xsw.asrkala.top/""","""url""","""botnet_cc""","""win.vidar""","""None""","""Vidar""",ThreatFox,2025-12-19T04:09:23.982401
+2025-12-17 09:07:04,"""1681327""","""https://gor.botick.top/""","""url""","""botnet_cc""","""win.vidar""","""None""","""Vidar""",ThreatFox,2025-12-19T04:09:23.982404
+2025-12-17 09:07:04,"""1681328""","""https://gor.frederickcookies.com.br/""","""url""","""botnet_cc""","""win.vidar""","""None""","""Vidar""",ThreatFox,2025-12-19T04:09:23.982408
+2025-12-17 09:07:04,"""1681330""","""https://86.54.42.243/""","""url""","""botnet_cc""","""win.vidar""","""None""","""Vidar""",ThreatFox,2025-12-19T04:09:23.982411
+2025-12-17 09:07:04,"""1681331""","""https://95.217.245.21/""","""url""","""botnet_cc""","""win.vidar""","""None""","""Vidar""",ThreatFox,2025-12-19T04:09:23.982414
+2025-12-17 09:07:04,"""1681332""","""https://157.180.35.209/""","""url""","""botnet_cc""","""win.vidar""","""None""","""Vidar""",ThreatFox,2025-12-19T04:09:23.982417
+2025-12-17 09:07:03,"""1681325""","""https://xsw.chadamaite.com/""","""url""","""botnet_cc""","""win.vidar""","""None""","""Vidar""",ThreatFox,2025-12-19T04:09:23.982421
+2025-12-17 07:46:26,"""1680801""","""http://114.132.217.187:8888/supershell/login/""","""url""","""botnet_cc""","""unknown""","""None""","""Unknown malware""",ThreatFox,2025-12-19T04:09:23.982427
+2025-12-17 07:46:25,"""1681135""","""http://198.46.216.206:8888/supershell/login/""","""url""","""botnet_cc""","""unknown""","""None""","""Unknown malware""",ThreatFox,2025-12-19T04:09:23.982432
+2025-12-17 07:46:22,"""1681069""","""https://tenjin-central.com/""","""url""","""payload_delivery""","""unknown""","""None""","""Unknown malware""",ThreatFox,2025-12-19T04:09:23.982436
+2025-12-17 07:46:21,"""1681137""","""https://usanovafoundation.org/""","""url""","""payload_delivery""","""unknown""","""None""","""Unknown malware""",ThreatFox,2025-12-19T04:09:23.982440
+2025-12-17 07:46:18,"""1681189""","""https://lead-mc.jp/""","""url""","""payload_delivery""","""unknown""","""None""","""Unknown malware""",ThreatFox,2025-12-19T04:09:23.982444
+2025-12-17 07:15:10,"""1681279""","""http://fedoramaginoracura.site:8080/updater?for=5120D3FEDD36EAC912DB54C863CE59BB""","""url""","""botnet_cc""","""unknown""","""None""","""Unknown malware""",ThreatFox,2025-12-19T04:09:23.982448
